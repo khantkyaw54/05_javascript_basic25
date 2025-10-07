@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="msg"></p>
+    <button id="hello">あいさつ</button>
+    <script>
+
+        let msgs = "";
+
+        let msg = document.querySelector("#msg");//
+
+        msg.textContent = msgs;
+        const helloBtn = document.querySelector("#hello");
+        console.log(helloBtn);
+
+        helloBtn.addEventListener('click', function () {
+            console.log(msgs = "こんにちは")
+            msg.textContent = msgs;
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>

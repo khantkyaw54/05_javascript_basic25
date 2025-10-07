@@ -20,6 +20,14 @@
         const plusBtn = document.querySelector("#plus");
         console.log(plusBtn);
 
+        plusBtn.addEventListener('click', function () {
+            // count = count + 1;
+            count++;
+            console.log(count);
+            counter.textContent = count;
+        });
+
+
         let a;
         console.log(a);//undefined
         a = 10;
